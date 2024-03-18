@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDA</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="title" style="display: flex;justify-content: center; color: blue;">Đồ họa máy tính</h1>
+            <h2 class="title" style="display: flex;justify-content: center; color: rgb(20, 101, 223);">Lab 01: Vẽ đường
+                thẳng sử dụng DDQ &
+                Bresenahm | Vẽ đường tròn sử dụng Midpoint</h2>
+            <h3 class="author" style="display: flex;justify-content: center;color: rgb(20, 101, 223)"></h3>
+        </div>
+
+        <div class="main-container" style="display: flex;align-items: center;">
+            <div class="left"
+                style="display: flex; flex-direction: column-reverse; align-items: center; margin-right: 20px; width: 20%;">
+                <div>
+                    <label for="algorithm" style="font-size: 22px;
+                    font-weight: bold;
+                    color: blue;">Chọn thuật toán</label>
+                    <select id="options" name="options"
+                        style="margin-top: 5px; margin-left: 40px; cursor: pointer; font-size: 15px; height: 30px;">
+                        <option style="cursor: pointer;" value="dda">Vẽ đường thẳng bằng DDA</option>
+                        <option style="cursor: pointer;" value="bresenham">Vẽ đường thẳng bằng Bresenham</option>
+                        <option style="cursor: pointer;" value="midpoint">Vẽ đường tròn bằng Midpoint</option>
+                    </select>
+                </div>
+                <button class="button" id="clearButton" style="cursor:pointer;    
+                margin-bottom: 50px;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ">Clear</button>
+            </div>
+            <canvas id="canvas"
+                style="cursor: pointer;background-color: rgb(255, 255, 255); border: 2px solid rgb(0, 0, 255);">
+            </canvas>
+        </div>
+
+        <script type="module" src="./src/painter.js"></script>
+    </div>
+</body>
+
+</html>
